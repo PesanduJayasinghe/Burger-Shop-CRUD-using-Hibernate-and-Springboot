@@ -1,4 +1,4 @@
-package Model.Entity;
+package example.Model.Entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -17,7 +17,7 @@ public class Item {
     private String ItemCode;
     private String Description;
     private String PackSize;
-    private String UnitPrice;
-    private String QtyOnHand;
+    private Double UnitPrice;
+    private int QtyOnHand;
 
 }
