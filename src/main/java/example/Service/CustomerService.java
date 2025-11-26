@@ -15,8 +15,6 @@ public class CustomerService {
     @Autowired
     CustomerRepository customerRepository;
 
-    ArrayList<CustomerDto> customerDtoList = new ArrayList<>();
-
     public Customer getObject(CustomerDto customerDto){
 
         return new Customer(
@@ -74,6 +72,7 @@ public class CustomerService {
     public List<CustomerDto> getAllCustomer(){
 
        List<Customer> all=customerRepository.findAll();
+       ArrayList<CustomerDto> customerDtoList = new ArrayList<>();
 
        for(Customer customer : all){
             customerDtoList.add(

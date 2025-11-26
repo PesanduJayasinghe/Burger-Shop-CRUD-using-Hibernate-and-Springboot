@@ -1,6 +1,6 @@
-package Repository;
+package example.Repository;
 
-import Model.Entity.Item;
+import example.Model.Entity.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
