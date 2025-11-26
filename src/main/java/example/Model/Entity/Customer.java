@@ -15,14 +15,14 @@ import lombok.*;
 public class Customer {
 
     @Id
-    private String CustID;
-    private String CustName;
-    private String CustAddress;
-    private String CustDOB;
-    private double CustSalary;
-    private String CustCity;
-    private String CustCountry;
-    private String CustZip;
+    private String custID;
+    private String custName;
+    private String custAddress;
+    private String custDOB;
+    private double custSalary;
+    private String custCity;
+    private String custCountry;
+    private String custZip;
 
 
 }
