@@ -1,7 +1,6 @@
 package example.Controller;
 
 import example.Model.DTO.CustomerDto;
-import example.Model.Entity.Customer;
 import example.Service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -36,12 +35,12 @@ public class CustomerController {
     }
 
     @GetMapping("/all")
-    public List<Customer> getAllCustomer(){
+    public List<CustomerDto> getAllCustomer(){
         return customerService.getAllCustomer();
     }
 
     @GetMapping("search/{id}")
-    public Customer searchCustomer(@PathVariable String id){
+    public CustomerDto searchCustomer(@PathVariable String id){
         return customerService.searchCustomer(id);
     }
 
