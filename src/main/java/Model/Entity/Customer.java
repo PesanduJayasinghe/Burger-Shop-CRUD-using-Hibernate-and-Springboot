@@ -15,7 +15,6 @@ import lombok.*;
 public class Customer {
 
     @Id
-    @Column(length = 6)
     private String CustID;
     private String CustName;
     private String CustAddress;
